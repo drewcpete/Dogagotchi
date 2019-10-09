@@ -1,0 +1,10 @@
+@using ThePound.Models;
+
+<h1>Here are your dogs:</h1>
+    @foreach(Dog dog in Model)
+    {
+        <ul>
+            <li>@dog.Name</li>
+            <li>@dog.Age</li>
+        </ul>
+    }
