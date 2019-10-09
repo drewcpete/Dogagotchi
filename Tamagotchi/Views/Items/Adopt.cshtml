@@ -1,0 +1,7 @@
+<h1>@Model.GetType()</h1>
+<form action="/dog/new" method="post">
+    <label for="newName">Name your new dog!</label>
+    <input id="newName" name="newName" type="text">
+    <input type="hidden" name="type" value=@Model.GetType()>
+    <button type="submit">Submit</button>
+</form>
